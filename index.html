@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZNewtDev</title>
+  <title>zNewtDev</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="znewtdev.png"/>
 </head>
 <body>
 
@@ -26,8 +27,8 @@
   <!-- ════════════════════ NAVBAR ════════════════════ -->
   <nav id="navbar">
     <a href="#" class="nav-logo">
-      <img src="znewtdev.jpeg" alt="ZNEWT DEV Logo" />
-      ZNEWT<span>DEV</span> 
+      <img src="znewtdev.png" alt="ZNEWT DEV Logo" />
+      <span>zNewt-Dev</span> 
     </a>
     <ul class="nav-links">
       <li><a href="#cursos">Cursos</a></li>
@@ -48,21 +49,85 @@
     </div>
 
     <h1 class="hero-title">
-      ZNEWT-WEB<br/>
-    <span class="line2">Aprendizado que transforma</span>
+      zNewt-Dev<br/>
+    <span class="line2">Zero ao Avançado</span>
     </h1>
 
     <p class="hero-sub">
-      Aprenda as tecnologias mais modernas com instrutores experientes.
-      Cursos práticos objetivos do zero ao avançado.
+      Otimize seu tempo de aprendizado.<br>
+      Conteúdo objetivo, focado em resultado.
     </p>
 
     <div class="hero-buttons">
       <a href="#cursos" class="btn-primary">Ver Cursos</a>
       <a href="#equipe" class="btn-outline">Conhecer a Equipe</a>
     </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  <br><div class="marquee-wrap">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+  </section>
+  <!-- ════════════════════ MARQUEE ════════════════════ -->
 
-    <div class="hero-stats">
+
+  <!-- ════════════════════ COURSES ════════════════════ -->
+  <section id="cursos">
+    <div class="section-header reveal">
+      <div class="section-tag">Trilhas de Aprendizado</div>
+      <h2 class="section-title">Preparado para<span class="accent"> evoluir? </span></h2>
+      <p class="section-sub">
+        Menos tempo gerenciando ferramentas. Mais tempo para fazer acontecer.
+        Cursos objetivos 
+      </p>
+    </div>
+    <div class="courses-grid" id="coursesGrid"></div>
+  </section>
+
+  <!-- ════════════════════ FEATURES ════════════════════ -->
+  <section id="features">
+    <div class="section-header reveal">
+      <div class="section-tag">Qual nosso objetivo?</div>
+      <h2 class="section-title">O lugar perfeito <span class="accent"><br>para o seu Futuro</span></h2>
+      <p class="section-sub">Projetado para progredir de verdade!</p>
+    </div>
+    <div class="features-grid" id="featuresGrid"></div>
+  </section>
+
+  <!-- ════════════════════ TEAM ════════════════════ -->
+  <section id="equipe">
+    <div class="section-header reveal">
+      <div class="section-tag">Por que ZNEWT DEV?</div>
+      <h2 class="section-title">Nossa <span class="accent">Equipe</span></h2>
+      <p class="section-sub">Desenvolvedores apaixonados por compartilhar conhecimento.</p>
+    </div>
+    <div class="team-grid" id="teamGrid"></div>
+  </section>
+
+  <!-- ════════════════════ CTA ════════════════════ -->
+  <section id="cta">
+    <div class="cta-box reveal">
+      <h2 class="cta-title">
+        O <span class="cta-accent">primeiro</span> passo
+      </h2>
+      <p class="cta-sub">
+        Deixe seu e-mail e notificamos quando os cursos estiverem disponíveis.<br>
+        <i>Simplifique o processo. Acelere seus resultados.</i>
+      </p>
+      <div class="notify-form">
+        <input
+          type="email"
+          class="notify-input"
+          placeholder="seuemail@exemplo.com"
+          id="emailInput"
+        />
+        <button class="btn-primary" id="notifyBtn">Subscrever</button>
+      </div>
+      <p id="notifyMsg"></p><br><br>     
+    </div>
+        <div class="hero-stats">
       <div class="stat-item">
         <div class="stat-num" data-target="12">0</div>
         <div class="stat-label">Cursos Planejados</div>
@@ -78,77 +143,12 @@
         <div class="stat-label">Possibilidades</div>
       </div>
     </div>
-
-    <div class="scroll-hint">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ════════════════════ MARQUEE ════════════════════ -->
-  <div class="marquee-wrap">
-    <div class="marquee-track" id="marqueeTrack"></div>
-  </div>
-
-  <!-- ════════════════════ COURSES ════════════════════ -->
-  <section id="cursos">
-    <div class="section-header reveal">
-      <div class="section-tag">📚 Trilhas de Aprendizado</div>
-      <h2 class="section-title">Cursos em <span class="accent">Destaque</span></h2>
-      <p class="section-sub">
-        Do básico ao avançado — vídeos chegando em breve para cada trilha.
-      </p>
-    </div>
-    <div class="courses-grid" id="coursesGrid"></div>
-  </section>
-
-  <!-- ════════════════════ FEATURES ════════════════════ -->
-  <section id="features">
-    <div class="section-header reveal">
-      <div class="section-tag">⚡ Por que ZNEWT DEV?</div>
-      <h2 class="section-title">Habilidades que <span class="accent">Transformam</span></h2>
-      <p class="section-sub">Uma experiência projetada para quem quer evoluir de verdade.</p>
-    </div>
-    <div class="features-grid" id="featuresGrid"></div>
-  </section>
-
-  <!-- ════════════════════ TEAM ════════════════════ -->
-  <section id="equipe">
-    <div class="section-header reveal">
-      <div class="section-tag">👥 Nossa Equipe</div>
-      <h2 class="section-title">Quem está <span class="accent">por trás</span></h2>
-      <p class="section-sub">Desenvolvedores apaixonados por compartilhar conhecimento.</p>
-    </div>
-    <div class="team-grid" id="teamGrid"></div>
-  </section>
-
-  <!-- ════════════════════ CTA ════════════════════ -->
-  <section id="cta">
-    <div class="cta-box reveal">
-      <h2 class="cta-title">
-        Seja o <span class="cta-accent">primeiro</span> a saber
-      </h2>
-      <p class="cta-sub">
-        Deixe seu e-mail e avisamos quando os cursos estiverem disponíveis.
-        Conteúdo inédito, gratuito e de qualidade.
-      </p>
-      <div class="notify-form">
-        <input
-          type="email"
-          class="notify-input"
-          placeholder="seuemail@exemplo.com"
-          id="emailInput"
-        />
-        <button class="btn-primary" id="notifyBtn">Me avise! 🚀</button>
-      </div>
-      <p id="notifyMsg"></p>
-    </div>
   </section>
 
   <!-- ════════════════════ FOOTER ════════════════════ -->
   <footer>
     <a href="#" class="footer-logo">ZNEWT <span>DEV</span></a>
-    <p class="footer-copy">© 2025 ZNEWT DEV. Todos os direitos reservados.</p>
+    <p class="footer-copy">© 2025 zNewt-Dev. Todos os direitos reservados.</p>
     <div class="footer-links">
       <a href="#">Instagram</a>
       <a href="#">YouTube</a>

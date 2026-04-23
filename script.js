@@ -5,53 +5,43 @@
 /* ── Data ── */
 const courses = [
   {
-    emoji: '🌐', tag: 'Fundamentos', title: 'HTML & CSS Essentials',
-    desc: 'Construa a base sólida do desenvolvimento web. Semântica, layouts modernos com Flexbox e Grid, e responsividade real.',
+    emoji: '🌐', tag: 'Fundamentos', title: 'HTML',
+    desc: 'Construa a base sólida do desenvolvimento web com linguagem de marcação HTML',
     level: 1
   },
   {
-    emoji: '⚡', tag: 'Frontend', title: 'JavaScript Moderno',
-    desc: 'ES6+, async/await, manipulação do DOM, eventos e muito mais. Do básico até conceitos avançados de JS.',
-    level: 2
-  },
-  {
-    emoji: '⚛️', tag: 'Framework', title: 'React do Zero ao Pro',
-    desc: 'Componentes, hooks, estado global, rotas e deploy. O framework mais demandado do mercado atual.',
-    level: 2
-  },
-  {
-    emoji: '🎨', tag: 'Estilo', title: 'CSS Avançado & Animações',
+    emoji: '🎨', tag: 'Estilização', title: 'CSS',
     desc: 'Flexbox, Grid, variáveis CSS, pseudo-elementos e animações de alto impacto visual.',
-    level: 2
-  },
-  {
-    emoji: '🔧', tag: 'Backend', title: 'Node.js & APIs REST',
-    desc: 'Servidor, rotas, middlewares, autenticação JWT e integração com banco de dados na prática.',
-    level: 3
-  },
-  {
-    emoji: '🗄️', tag: 'Banco de Dados', title: 'SQL & NoSQL na Prática',
-    desc: 'MySQL, PostgreSQL e MongoDB. Modelagem de dados, consultas complexas e boas práticas.',
-    level: 3
-  },
-  {
-    emoji: '🚀', tag: 'DevOps', title: 'Git, GitHub & Deploy',
-    desc: 'Controle de versão profissional, pull requests, CI/CD e publicação em produção real.',
     level: 1
   },
   {
-    emoji: '📱', tag: 'Mobile', title: 'React Native',
+    emoji: '⚡', tag: 'Linguagem de programação', title: 'JavaScript',
+    desc: 'Fundamentos da linguagem, incluindo variáveis, funções, condicionais, loops e manipulação básica do DOM.',
+    level: 1
+  },
+  {
+    emoji: '⚛️',
+    tag: 'Frameworks',
+    title: 'React',
+    desc: 'Criação de interfaces modernas com componentes, hooks, gerenciamento de estado e integração com APIs.',
+    level: 2
+  },
+  {
+    emoji: '🔗', tag: 'DevOps', title: 'Git / GitHub',
+    desc: 'Controle de versão profissional, pull requests e publicação em produção real.',
+    level: 2
+  },
+  {
+    emoji: '📱', tag: 'App', title: 'Mobile',
     desc: 'Aplicativos mobile com JavaScript. Uma base de código, dois sistemas operacionais.',
-    level: 3
+    level: 2
   },
 ];
 
 const features = [
   { icon: '🎬', name: 'Vídeo Aulas HD',          desc: 'Conteúdo gravado com qualidade profissional. Assista no seu ritmo, quantas vezes quiser.' },
-  { icon: '💻', name: 'Projetos Reais',            desc: 'Cada curso termina com um projeto prático pronto para entrar no seu portfólio.' },
   { icon: '📖', name: 'Material Complementar',     desc: 'Slides, resumos e exercícios cuidadosamente elaborados para fixar o conteúdo.' },
   { icon: '💬', name: 'Comunidade Ativa',          desc: 'Tire dúvidas, compartilhe projetos e conecte-se com outros devs em crescimento.' },
-  { icon: '🏆', name: 'Certificado de Conclusão', desc: 'Comprove suas habilidades com certificados verificáveis e reconhecidos.' },
   { icon: '🔄', name: 'Conteúdo Atualizado',       desc: 'Cursos revisados constantemente para acompanhar o ritmo acelerado do mercado.' },
 ];
 
@@ -59,12 +49,12 @@ const team = [
   {
     initials: 'FS', name: 'Fábio Silva',
     role: 'Co-fundador & Instrutor',
-    bio: 'Desenvolvedor apaixonado por tecnologia e por transmitir conhecimento de forma clara e objetiva. Especialista em desenvolvimento frontend e fullstack.'
+    bio: 'Desenvolvedor full stack experiente em projetos sociais. Graduação em Análise de Sistemas no SENAI em curso.'
   },
   {
     initials: 'MS', name: 'Miguel Santana',
     role: 'Co-fundador & Instrutor',
-    bio: 'Desenvolvedor web com foco em construir experiências digitais de alto impacto. Apaixonado por boas práticas, performance e design de código.'
+    bio: 'Desenvolvedor web experiente com formação técnica em Análise de Sistemas e graduação em andamento no SENAI.'
   },
 ];
 

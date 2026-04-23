@@ -150,10 +150,10 @@ nav.scrolled {
 }
 .nav-logo span { color: var(--cyan); }
 .nav-logo img {
-  width: 40px; height: 40px;
+  width: 50px; height: 50px;
   border-radius: 11px;
   object-fit: contain;
-  filter: drop-shadow(0 0 10px var(--cyan));
+  filter: drop-shadow(0 0 5px var(--blue-mid));
 }
 
 .nav-links {
@@ -358,7 +358,7 @@ section { position: relative; z-index: 1; }
 }
 
 .scroll-hint {
-  position: absolute; bottom: 2.5rem; left: 50%;
+  position: absolute; bottom: 2.5rem; left: 48.5%;
   transform: translateX(-50%);
   display: flex; flex-direction: column; align-items: center; gap: 10px;
   opacity: 0; animation: fadeUp 1s 1.3s forwards;
@@ -368,7 +368,7 @@ section { position: relative; z-index: 1; }
   color: var(--muted); letter-spacing: 0.14em; text-transform: uppercase;
 }
 .scroll-line {
-  width: 1px; height: 56px;
+  width: 1px; height: 30px;
   background: linear-gradient(to bottom, var(--cyan), transparent);
   animation: scrollLine 2.2s ease-in-out infinite;
 }
@@ -411,7 +411,7 @@ section { position: relative; z-index: 1; }
    COURSES
 ════════════════════════════════════════════════════ */
 #cursos {
-  padding: var(--space-2xl) 6%;
+  padding: 2rem;
 }
 
 .courses-grid {
