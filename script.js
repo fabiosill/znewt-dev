@@ -7,17 +7,20 @@ const courses = [
   {
     emoji: '🌐', tag: 'Fundamentos', title: 'HTML',
     desc: 'Construa a base sólida do desenvolvimento web com linguagem de marcação HTML',
-    level: 1
+    level: 1,
+    link: 'aulas/aulahtml.html'
   },
   {
     emoji: '🎨', tag: 'Estilização', title: 'CSS',
     desc: 'Flexbox, Grid, variáveis CSS, pseudo-elementos e animações de alto impacto visual.',
-    level: 1
+    level: 1,
+    link: 'aulas/aulacss.html'
   },
   {
     emoji: '⚡', tag: 'Linguagem de programação', title: 'JavaScript',
     desc: 'Fundamentos da linguagem, incluindo variáveis, funções, condicionais, loops e manipulação básica do DOM.',
-    level: 1
+    level: 1,
+    link: 'aulas/aulajavascript.html'
   },
   {
     emoji: '⚛️',
@@ -93,9 +96,20 @@ const techs = [
             <div class="level-dots">${dots}</div>
             <span>${levelLabel}</span>
           </div>
-          <div class="card-coming">
-            <span class="coming-pulse"></span> Em breve
-          </div>
+                ${ c.link
+    ? `
+      <div class="card-coming2">
+        <a href="${c.link}" class="card-coming2">
+          Acessar
+        </a>
+      </div>
+    `
+    : `
+      <div class="card-coming2">
+        <span class="coming-pulse"></span> Em breve
+      </div>
+    `
+}
         </div>
       </div>`;
     grid.appendChild(el);

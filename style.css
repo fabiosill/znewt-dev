@@ -502,6 +502,12 @@ section { position: relative; z-index: 1; }
   letter-spacing: 0.07em; text-transform: uppercase;
   color: var(--blue-bright);
 }
+.card-coming2 {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--blue-bright);
+}
 .coming-pulse {
   width: 6px; height: 6px;
   background: var(--blue-bright); border-radius: 50%;
