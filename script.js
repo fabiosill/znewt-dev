@@ -52,12 +52,22 @@ const team = [
   {
     initials: 'FS', name: 'Fábio Silva',
     role: 'Co-fundador & Instrutor',
-    bio: 'Desenvolvedor full stack experiente em projetos sociais. Graduação em Análise de Sistemas no SENAI em curso.'
+    bio: 'Desenvolvedor full stack experiente em projetos sociais e e-commerce. Graduação em Análise de Sistemas no SENAI em curso.'
   },
   {
     initials: 'MS', name: 'Miguel Santana',
     role: 'Co-fundador & Instrutor',
     bio: 'Desenvolvedor web experiente com formação técnica em Análise de Sistemas e graduação em andamento no SENAI.'
+  },
+  {
+    initials: 'GO', name: 'Guilherme Oliveira',
+    role: 'Instrutor',
+    bio: 'Desenvolvedor web em projetos e-commerce. Graduação em Análise de Sistemas no SENAI em curso.'
+  },
+  {
+    initials: 'GF', name: 'Guilherme Fonseca',
+    role: 'Instrutor',
+    bio: 'Desenvolvedor web em negócios, experiente em projetos internos. Graduação em Análise de Sistemas no SENAI em andamento.'
   },
 ];
 
