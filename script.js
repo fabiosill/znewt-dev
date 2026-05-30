@@ -2,6 +2,41 @@
    ZNEWT DEV — script.js
 ════════════════════════════════════════════════════ */
 
+/* ── Mobile Hamburger Menu ── */
+(function initHamburger() {
+  const btn    = document.getElementById('hamburger');
+  const drawer = document.getElementById('navDrawer');
+  if (!btn || !drawer) return;
+
+  function openDrawer() {
+    btn.classList.add('open');
+    drawer.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  window.closeDrawer = function () {
+    btn.classList.remove('open');
+    drawer.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  btn.addEventListener('click', () => {
+    btn.classList.contains('open') ? closeDrawer() : openDrawer();
+  });
+
+  // Close when a drawer link is clicked
+  drawer.querySelectorAll('.drawer-link').forEach(link => {
+    link.addEventListener('click', () => {
+      closeDrawer();
+    });
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeDrawer();
+  });
+})();
+
 /* ── Data ── */
 const courses = [
   {
@@ -113,9 +148,7 @@ const techs = [
                 ${ c.link
     ? `
       <div class="card-coming2">
-        <a href="${c.link}" class="card-coming2">
-          Acessar
-        </a>
+        <a href="${c.link}" class="btn-acessar">Acessar</a>
       </div>
     `
     : `

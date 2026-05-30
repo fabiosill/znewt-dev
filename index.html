@@ -39,7 +39,21 @@
     <button class="nav-cta" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">
       Começar Agora
     </button>
+    <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-drawer" id="navDrawer">
+    <a href="#cursos"   class="drawer-link">Cursos</a>
+    <a href="#features" class="drawer-link">Recursos</a>
+    <a href="#equipe"   class="drawer-link">Equipe</a>
+    <a href="#cta"      class="drawer-link">Contato</a>
+    <button class="nav-cta" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'});closeDrawer();">
+      Começar Agora
+    </button>
+  </div>
 
   <!-- ════════════════════ HERO ════════════════════ -->
   <section id="hero">
